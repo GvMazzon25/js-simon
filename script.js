@@ -5,22 +5,15 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
  */
 
 const numbers = [
-    {
-        number1: genRandomNumber()  
-    },
-    {
-        number2:  genRandomNumber()
-    },
-    {
-        number3:  genRandomNumber()
-    },
-    {
-        number4:  genRandomNumber()
-    },
-    {
-        number5:  genRandomNumber()
-    },
+    numberOne = genRandomNumber(), 
+    numberTwo =  genRandomNumber(), 
+    numberThree =  genRandomNumber(),
+    numberFour =  genRandomNumber(),
+    numberFive =  genRandomNumber()
 ]
+    
+
+        
 
 console.log(numbers);
 
@@ -29,25 +22,23 @@ const numbersContainer = document.querySelector('.container');
 function genPost(numbers, numbersContainer){
     numbersContainer.innerHTML = '';
 
-    for(let i = 0; i <= numbers.length; i++){
-        const numbersItem = numbers[i];
-        console.log(numbersItem);
+    for(let i = 0; i < numbers.length; i++){
     
-        numbersContainer.innerHTML += `
+        numbersContainer.innerHTML = `
         <div class="number">
-        <h1>${numbersItem.number1}</h1>
+        <h1>${numberOne}</h1>
         </div>
         <div class="number">
-            <h1>${numbersItem.number2}</h1>
+            <h1>${numberTwo}</h1>
         </div>
         <div class="number">
-            <h1>${numbersItem.number3}</h1>
+            <h1>${numberThree}</h1>
         </div>
         <div class="number">
-            <h1>${numbersItem.number4}</h1>
+            <h1>${numberFour}</h1>
         </div>
         <div class="number">
-            <h1>${numbersItem.number5}</h1>
+            <h1>${numberFive}</h1>
         </div>`
     }
 }
