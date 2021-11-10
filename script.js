@@ -19,6 +19,12 @@ console.log(numbers);
 
 const numbersContainer = document.querySelector('.container');
 
+setTimeout (addHide, 5000);
+
+
+
+//Function
+
 function genPost(numbers, numbersContainer){
     numbersContainer.innerHTML = '';
 
@@ -45,12 +51,15 @@ function genPost(numbers, numbersContainer){
 
 genPost(numbers, numbersContainer);
 
-
-//Function
-
-
 function genRandomNumber(){
     let userNumber = Math.floor(Math.random()*100);
     return userNumber
 }
+
+function addHide(){
+    let hide = document.querySelector(".container");
+    hide.classList.add("display");
+    return hide;
+}
+
 
