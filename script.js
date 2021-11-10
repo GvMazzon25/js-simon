@@ -4,3 +4,22 @@ Dopo 30 secondi i numeri in pagina devono essere rimossi e l’utente deve inser
 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
  */
 
+const numbers = [
+    {
+        number1:``  
+    },
+    {
+        number2:``
+    },
+    {
+        number2:``
+    },
+    {
+        number2:``
+    },
+    {
+        number3:``
+    },
+]
+
+console.log(numbers);
