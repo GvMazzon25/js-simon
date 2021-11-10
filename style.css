@@ -6,11 +6,15 @@
 }
 
 body{
-    width: 900px;
-    height: 100vh;
     padding: 20px;
     margin: auto;
     background-color:rgb(133, 210, 255);
+}
+
+.container{
+    width: 900px;
+    height: 100vh;
+    margin: auto;
 }
 
 /*Utility*/
@@ -20,6 +24,9 @@ body{
     justify-content: center;
 }
 
+.display{
+    display: none;
+}
 
 
 /*Class Section*/

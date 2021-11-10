@@ -6,7 +6,7 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
 const numbers = [
     {
-        number1:``  
+        number1: ''  
     },
     {
         number2:``
@@ -23,3 +23,19 @@ const numbers = [
 ]
 
 console.log(numbers);
+
+const max = 100;
+const min = 1;
+
+
+
+//Function
+
+
+let userNumber = '';
+
+function genRandomNumber(max, min){
+    userNumber = Math.floor(Math.random()*max)-min;
+    return userNumber
+}
+
